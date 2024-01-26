@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Firefox */
+/* Track */
+::-moz-scrollbar {
+    width: 1px;
+    /* Width of the scrollbar */
+    height: 1px;
+}
+
+::-moz-scrollbartrack {
+    background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:hover {
+    @apply rounded-md bg-orange-800;
+}
+
+.dark ::-webkit-scrollbar-thumb,
+.dark ::-webkit-scrollbar-thumb:hover {
+    @apply bg-orange-200;
+}
